@@ -26,7 +26,7 @@ function App() {
     <div className='app'>
       <h1>Food Recipe Plaza🍔🍕🍟</h1>
       <form onSubmit={submitHandler}>
-        <input className='ingridient' type="text" value={query} onChange={(e)=>setquery(e.target.value)} placeholder='Enter Ingridient'/>
+        <input className='ingridient' type="text" value={query} onChange={(e)=>setquery(e.target.value)} placeholder='Enter Mango'/>
         <input className='button' type="submit" value="Submit" />
         {/* i was doing this mistake again and again that i was using onclick inside option but correct way is to use onchange inside of select tag */}
         <select className='selecttag' onChange={(e)=>setadditionals(e.target.value)}>
